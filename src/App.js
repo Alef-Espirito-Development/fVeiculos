@@ -21,7 +21,7 @@ const App = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/vehicles'); // Substitua pelo seu endpoint correto
+        const response = await fetch('https://s-veiculos-git-main-alefs-projects-16b120f4.vercel.app/api/vehicles'); // Substitua pelo seu endpoint correto
         const data = await response.json();
         setVehicles(data); // Atualiza o estado com a lista de veículos
       } catch (error) {
