@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api/vehicles', // URL do seu servidor
+  baseURL: 'https://s-veiculos-git-main-alefs-projects-16b120f4.vercel.app/api/vehicles', // URL do seu servidor
 });
 
 export const getVehicles = () => api.get('/');
